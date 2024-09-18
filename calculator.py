@@ -13,7 +13,7 @@ while True:
         try: 
             num0 = float(num0)
             dontBreak=False
-        except: 
+        except ValueError: 
             if num0=="pi":
                 num0=math.pi
                 dontBreak=False
@@ -30,7 +30,7 @@ while True:
                 print("Can't Devide by 0")
             else:
                 dontBreak=False
-        except: 
+        except ValueError: 
             if num1=="pi":
                 num1=math.pi
                 dontBreak=False
